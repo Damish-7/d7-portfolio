@@ -848,3 +848,134 @@ header{
 
 
 
+
+
+
+/* ==================================================
+   MOBILE & TABLET ONLY — DESKTOP REMAINS UNTOUCHED
+   ================================================== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .main {
+        margin: 100px 40px;
+    }
+
+    .about,
+    .projects,
+    #contact {
+        padding: 100px 40px;
+    }
+
+    .about-content {
+        gap: 80px;
+    }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+
+    .head {
+        flex-direction: column;
+        padding: 18px 16px;
+        height: auto;
+    }
+
+    .link-ul,
+    .sco-ul {
+        display: none; /* keep your current behavior */
+    }
+
+    .main {
+        margin: 80px 14px 40px;
+    }
+
+    .container {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 32px;
+    }
+
+    .hi h1 {
+        font-size: 30px;
+    }
+
+    .main h3 {
+        font-size: 22px;
+    }
+
+    .main p {
+        font-size: 14px;
+        max-width: 320px;
+        margin: 0 auto 28px;
+    }
+
+    .btn {
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+    }
+
+    .btn a {
+        width: 100%;
+        max-width: 280px;
+        padding: 14px 0;
+    }
+
+    .Me {
+        width: 200px;
+        height: 200px;
+    }
+
+    .Me img {
+        width: 145px;
+    }
+
+    .orbit {
+        width: 200px;
+        height: 200px;
+    }
+
+    .html  { transform: rotate(0deg)   translate(100px); }
+    .unity { transform: rotate(51deg)  translate(100px); }
+    .java  { transform: rotate(103deg) translate(100px); }
+    .C     { transform: rotate(154deg) translate(100px); }
+    .figma { transform: rotate(206deg) translate(100px); }
+    .js    { transform: rotate(257deg) translate(100px); }
+    .css   { transform: rotate(309deg) translate(100px); }
+
+    .about {
+        padding: 60px 14px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .about-img img {
+        width: 220px;
+        margin: 0 auto;
+    }
+
+    .skils {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .projects {
+        padding: 60px 14px;
+    }
+
+    #contact {
+        padding: 60px 14px;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+
